@@ -10,7 +10,7 @@ categories = ['Agricultural', 'Contracted', 'Transportation', 'Utility', 'Retail
 accounts = {}
 for i in range(5):
 	accounts['User'+str(i)] = []
-	for j in range(100):
+	for j in range(1000):
 		accounts['User'+str(i)].append((random.choice(categories), round(random.uniform(0, 1000), 2)))
 
 with open('accounts.json', 'w') as fp:
