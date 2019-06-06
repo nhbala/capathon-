@@ -13,6 +13,10 @@ def give_back():
     returned_charities = find_charities(json_object)
     return render_template('extended.html', charity_list=returned_charities)
 
+@app.route('/about_us')
+def about_us():
+	# return 'Authors: Seri Choi, Hannah Chang, Nathan Bala, Rohit Mandavia, and Winnie Wang'
+	return render_template('aboutus.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
