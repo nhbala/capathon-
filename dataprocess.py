@@ -1,12 +1,12 @@
 import json
 import datetime, time
 
-
 json_object = json.load(open("app/accounts.json"))
 listing = ['Retail Outlet', 'Agricultural', 'Government', 'Transportation', 'Miscellaneous', 'Clothing', 'Professional Services and Membership', 'Travel', 'Business', 'Contracted', 'Utility']
-user_vectors_dict = {}
 other_vector_stuff = {"Asian": 0, "White":1, "Hispanic/Latino":2, "Pacific Islander":3, "Native American":4, "Other":5, "Did not Disclose":6, "M":7, "F":8, "O":9}
 lower_bound = time.time() - 30*24*3600
+user_vectors_dict = {}
+
 for user in json_object:
     user_vector = []
     #dict for category spending

@@ -49,7 +49,7 @@
             <img  src="/static/images/icon_48.gif"/>
             <p>Loading... </p>
         </div> -->
-        <div id="mainContent" style="background-image: url('/static/images/charity-search.png')">
+        <div id="mainContent" style="background-image: url('/static/images/charity-search.png'); background-repeat: repeat-x; background-position: left bottom">
           <div class="d-flex flex-column justify-content-center h-50">
             <h1 class="text-center p-4">Finding Ways to Give Back is Hard...</h1>
             <h3 class="text-center p-4">Let Us Help You</h3>
@@ -61,8 +61,7 @@
         </div>
         <script>
             var height = $(window).height();
-            let nav_height = $("nav").height();
-            $("#mainContent").css("min-height", height-nav_height);
+            $("#mainContent").css("min-height", height);
         </script>
     </body>
 
