@@ -2,8 +2,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def start():
     return render_template('index.html')
+
+@app.route('/give_back')
+def give_back():
+    return render_template('extended.html')
 
 
 if __name__ == '__main__':

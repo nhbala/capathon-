@@ -1,23 +1,65 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+    <head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/common.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-  </head>
-  <body>
-    <h1 class="text-center">Giving Back can be Hard</h1>
-    <h2 class="text-center">Lets Make it Easier</h2>
+        {% block headers %}
 
+        {% endblock headers %}
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Schoolbell|Roboto:300" rel="stylesheet">
+        <link rel="stylesheet" href="/static/style/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/style/jquery-ui.min.css">
+        <link rel="stylesheet" href="/static/style/main.css">
+        <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png"/>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        <title>MariWanna</title>
+    </head>
+
+    <body style="background-image: url('../images/background-grey.jpg');">
+        <!-- TODO: Please change lines 10 and 11 according to your actual project name and student names-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <a class="navbar-brand" href="/" style="font-family: 'Schoolbell', cursive; font-size: 1.6rem">
+                <img src="/static/images/charityone.png" class="d-inline-block align-top" width="90px" height="30px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-between w-100">
+                    <div class="d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/search-similar">About Us</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!-- <div id="loader" class="d-flex flex-column justify-content-center bg-light">
+            <img  src="/static/images/icon_48.gif"/>
+            <p>Loading... </p>
+        </div> -->
+        <div id="mainContent">
+          <div class="d-flex flex-column justify-content-center h-50">
+        <h1 class="text-center p-4">Finding Ways to Give Back is Hard...</h1>
+        <h3 class="text-center p-4">Let us Help You</h3>
+
+        <div class="d-flex flex-row justify-content-center">
+            <a class="btn btn-dark" href="/give_back">Sync Bank Account</a>
+        </div>
+          </div>
+        </div>
+        <script>
+            var height = $(window).height();
+            let nav_height = $("nav").height();
+            $("#mainContent").css("min-height", height-nav_height);
+        </script>
+    </body>
+
 </html>
