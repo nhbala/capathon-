@@ -17,12 +17,12 @@
         <link rel="stylesheet" href="/static/style/bootstrap.min.css">
         <link rel="stylesheet" href="/static/style/jquery-ui.min.css">
         <link rel="stylesheet" href="/static/style/main.css">
-        <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="/static/images/charityone.png"/>
 
-        <title>MariWanna</title>
+        <title>Charity One</title>
     </head>
 
-    <body style="background-image: url('../images/background-grey.jpg');">
+    <body style="background-image: url('../images/background-grey.jpg'); overflow-y: hidden;">
         <!-- TODO: Please change lines 10 and 11 according to your actual project name and student names-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <a class="navbar-brand" href="/" style="font-family: 'Schoolbell', cursive; font-size: 1.6rem">
@@ -35,7 +35,10 @@
                 <ul class="navbar-nav d-flex justify-content-between w-100">
                     <div class="d-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="/search-similar">About Us</a>
+                            <a class="nav-link" href="/">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Charities</a>
                         </li>
                     </div>
                 </ul>
@@ -47,13 +50,16 @@
         </div> -->
         <div id="mainContent">
           <div class="d-flex flex-column justify-content-center h-50">
-        <h1 class="text-center p-4">Finding Ways to Give Back is Hard...</h1>
-        <h3 class="text-center p-4">Let us Help You</h3>
+            <h1 class="text-center p-4">Finding Ways to Give Back is Hard...</h1>
+            <h3 class="text-center p-4">Let Us Help You</h3>
 
-        <div class="d-flex flex-row justify-content-center">
+          <div class="d-flex flex-row justify-content-center">
             <a class="btn btn-dark" href="/give_back">Sync Bank Account</a>
-        </div>
           </div>
+          </div>
+          <img src="/static/images/charity-search.png" style="margin:-195px -50px">
+          <img src="/static/images/charity-search.png" style="margin:-195px 400px">
+          <img src="/static/images/charity-search.png" style="margin:-500px 800px">
         </div>
         <script>
             var height = $(window).height();
