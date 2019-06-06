@@ -28,3 +28,19 @@ for i in range(10000):
 
 with open('accounts.json', 'w') as fp:
 	json.dump(accounts, fp)
+
+#############
+# Test User #
+#############
+
+test_trans_list = []
+for j in range(200):
+	starting_date += 65000
+	test_trans_list.append([random.choice(categories), round(random.uniform(0, 1000), 2), starting_date])
+# print(test_trans_list)
+test_user = {'trans': test_trans_list, 'gender': random.choice(gender), 'race': random.choice(race), 
+			 'age': random.randint(16, 110), 'total_money': (random.randint(5, 250000))}
+print(test_user)
+
+with open('test_user_info.json', 'w') as tu:
+	json.dump(test_user, tu)
